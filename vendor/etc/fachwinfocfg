@@ -1,0 +1,86 @@
+# Hardware info configure for Shadow HwInfoQcomQ5003
+
+## Rules Description:
+## '*' is the separator between key and value(s).
+## '|' is the separator between multiple values.
+### Format for a single value : key* value
+### Format for multiple values: key* value1 | value2 | ...
+### NOTE:
+### 1. EMPTY or NULL value is all right;
+### 2. a space is suggested before and after the separator '|'.
+
+
+acc_sensor_mfr*
+adb_sn*/config/usb_gadget/g1/strings/0x409/serialnumber
+ambient_light_mfr*/sys/class/sprd_sensorhub/sensor_hub/light_info
+baro_sensor_mfr*
+battery_capacity*/sys/class/power_supply/battery/capacity
+battery_mfr*/sys/devices/platform/soc/1c40000.qcom,spmi/spmi-0/spmi0-02/1c40000.qcom,spmi:qcom,pm7250b@2:qpnp,qg/battery_type
+battery2_mfr*/sys/devices/platform/soc/1c40000.qcom,spmi/spmi-0/spmi0-02/1c40000.qcom,spmi:qcom,pm7250b@2:qpnp,qg/battery_type
+battery_voltage*/sys/class/power_supply/battery/voltage_now
+board_id*/sys/hwinfo/board_id
+cam_back_lens_efuse*/data/vendor/cameraserver/hwinfo/cam_back_lens_efuse
+cam_back_lens_mfr*/data/vendor/cameraserver/hwinfo/cam_back_lens_mfr
+cam_back_lens_otp_status*/data/vendor/cameraserver/hwinfo/cam_back_lens_otp_status
+cam_depth_lens_efuse*/data/vendor/cameraserver/hwinfo/cam_depth_lens_efuse
+cam_depth_lens_mfr*/data/vendor/cameraserver/hwinfo/cam_depth_lens_mfr
+cam_depth_lens_otp_status*/data/vendor/cameraserver/hwinfo/cam_depth_lens_otp_status
+cam_front_lens_efuse*/data/vendor/cameraserver/hwinfo/cam_front_lens_efuse
+cam_front_lens_mfr*/data/vendor/cameraserver/hwinfo/cam_front_lens_mfr
+cam_front_lens_otp_status*/data/vendor/cameraserver/hwinfo/cam_front_lens_otp_status
+cam_iris_lens_efuse*/data/vendor/cameraserver/hwinfo/cam_iris_lens_efuse
+cam_iris_lens_mfr*/data/vendor/cameraserver/hwinfo/cam_iris_lens_mfr
+cam_iris_lens_otp_status*/data/vendor/cameraserver/hwinfo/cam_iris_lens_otp_status
+cam_macro_lens_efuse*/data/vendor/cameraserver/hwinfo/cam_macro_lens_efuse
+cam_macro_lens_mfr*/data/vendor/cameraserver/hwinfo/cam_macro_lens_mfr
+cam_macro_lens_otp_status*/data/vendor/cameraserver/hwinfo/cam_macro_lens_otp_status
+cam_tele_lens_efuse*/data/vendor/cameraserver/hwinfo/cam_tele_lens_efuse
+cam_tele_lens_mfr*/data/vendor/cameraserver/hwinfo/cam_tele_lens_mfr
+cam_tele_lens_otp_status*/data/vendor/cameraserver/hwinfo/cam_tele_lens_otp_status
+cam_tof_lens_efuse*/data/vendor/cameraserver/hwinfo/cam_tof_lens_efuse
+cam_tof_lens_mfr*/data/vendor/cameraserver/hwinfo/cam_tof_lens_mfr
+cam_tof_lens_otp_status*/data/vendor/cameraserver/hwinfo/cam_tof_lens_otp_status
+cam_wide_angle_lens_efuse*/data/vendor/cameraserver/hwinfo/cam_wide_angle_lens_efuse
+cam_wide_angle_lens_mfr*/data/vendor/cameraserver/hwinfo/cam_wide_angle_lens_mfr
+cam_wide_angle_lens_otp_status*/data/vendor/cameraserver/hwinfo/cam_wide_angle_lens_otp_status
+charger_ic_mfr*/sys/class/power_supply/battery/authentic
+charger2_ic_mfr*/sys/ontim_dev_debug/charge_ic/vendor
+cpu_type*
+cpu_id*/sys/devices/soc0/serial_number
+factory_partition*/dev/block/sda3
+fp_mfr*/sys/devices/virtual/misc/focaltech_fp/focaltech/focaltech_info | /sys/devices/platform/soc/soc:fingerprint_fpsensor/chipone/chipone_info
+geo_sensor_mfr*
+gyro_sensor_mfr*
+g_sensor_mfr*/sys/class/sprd_sensorhub/sensor_hub/acc_info
+hw_sku*/sys/hwinfo/hw_sku
+hw_version*/sys/hwinfo/hw_version
+lcd_mfr*/sys/ontim_dev_debug/touch_screen/lcdvendor
+memory_capacity*/proc/mem_capacity
+memory_mfr*/sys/devices/platform/soc/4804000.ufshc/string_descriptors/manufacturer_name
+proximity_mfr*/sys/class/sprd_sensorhub/sensor_hub/prox_info
+nfc_mfr*/sys/nfc/nfcvendor | /sys/sec_nfc/nfc_chip_name
+power_usb_type*/sys/class/power_supply/usb/power_now
+quick_charge_type*/sys/class/power_supply/usb/power_now
+receiver_cali_data*
+speaker_cali_data*
+speaker_mfr*/proc/asound/cards
+speaker_num*
+sar_sensor_mfr*
+sar_cali_ch_value*/mnt/vendor/persist/sensors/registry/registry/icp201xx_0_platform.pressure.fac_cal.bias
+simcard_holder*/sys/hwinfo/CARD_HOLDER_PRESENT
+storage_mfr*/sys/devices/platform/soc/4804000.ufshc/string_descriptors/manufacturer_name
+storage_capacity*/sys/devices/platform/soc/soc:ap-apb/20200000.ufs/geometry_descriptor/ufs_capacity
+storage_cid*/sys/devices/platform/soc/soc:ap-apb/20200000.ufs/string_descriptors/ufs_cid
+storage_sn*/sys/devices/platform/soc/4804000.ufshc/string_descriptors/serial_number
+storage_life*/sys/devices/platform/soc/4804000.ufshc/health_descriptor/eol_info
+storage_info*
+tp_mfr*/sys/ontim_dev_debug/touch_screen/version
+tp_capacity*/sys/devices/platform/soc/4a80000.spi/spi_master/spi0/spi0.0/omnivision_tcm.0/do_testing | /proc/cts_factory_test
+typec_mfr*/sys/class/power_supply/battery/calibrate
+type_cc_status*/sys/devices/platform/soc/1c40000.qcom,spmi/spmi-0/spmi0-02/1c40000.qcom,spmi:qcom,pm7250b@2:qcom,qpnp-smb5/typec_cc_orientation
+private_partition*/dev/block/by-name/private
+oemowninfo_partition*/dev/block/by-name/oemowninfo
+charge_ic_path*/sys/devices/platform/soc/1c40000.qcom,spmi/spmi-0/spmi0-02/1c40000.qcom,spmi:qcom,pm7250b@2:qcom,qpnp-smb5/chargers_control
+prox_cal_path*/mnt/vendor/persist/sensors/registry/registry/ltr569_0_platform.proximity.fac_cal
+light_cal_path*/mnt/vendor/persist/sensors/registry/registry/ltr569_0_platform.ambient.fac_cal
+antenna_connect_path*/sys/hwinfo/cable_gpio

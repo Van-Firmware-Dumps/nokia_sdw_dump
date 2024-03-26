@@ -1,0 +1,13 @@
+service facsvc-hal-2-0 /vendor/bin/hw/vendor.cnce.hardware.facsvc@2.0-service
+    class hal
+    user root
+    group root system drmrpc camera cameraserver nfc bluetooth media_rw everybody
+
+on property:odm.sys.faccmd=*
+    exec - root shell -- /system/bin/faccmd
+
+#The prop persist.vendor.setupcomplete is standard value used by facsvc.
+#Some products set different prop to indicate setup wizard status.
+#We translate it to standard here.
+on property:persist.sys.setupcomplete=*
+    setprop persist.vendor.setupcomplete ${persist.sys.setupcomplete}

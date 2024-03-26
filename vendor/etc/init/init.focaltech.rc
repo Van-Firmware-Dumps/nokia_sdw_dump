@@ -1,0 +1,8 @@
+on post-fs-data
+    mkdir /data/vendor/focaltech 0760 system system
+    restorecon /data/vendor/focaltech
+
+on boot
+    chown system system /dev/focaltech_fp
+    chmod 0660 /dev/focaltech_fp
+

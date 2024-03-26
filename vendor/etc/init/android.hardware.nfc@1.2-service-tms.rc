@@ -1,0 +1,8 @@
+on property:persist.vendor.nfc.chip.type=tms
+    start nfc_hal_service.tms
+
+service nfc_hal_service.tms /vendor/bin/hw/android.hardware.nfc@1.2-service-tms
+    class early_hal
+    user nfc
+    group nfc
+    disabled

@@ -1,0 +1,17 @@
+
+service vendor_dualcam_cali_check /vendor/bin/sh /vendor/bin/check_dualcam_cali_bin.sh
+    user root
+    group root shell system camera cameraserver
+    disabled
+    oneshot
+
+on property:sys.boot_completed=1 && property:ro.vendor.boardid=* && property:ro.vendor.hw_sku=*
+    start vendor_dualcam_cali_check
+
+on property:vendor.ontim.check.dualcam_cali=update_golden
+    start vendor_dualcam_cali_check
+
+on property:vendor.ontim.check.dualcam_cali=bin_updated
+    restorecon /mnt/vendor/persist/camera/dualcam_cali.bin
+    setprop persist.vendor.ontim.dualcam_cali.bin_copied true
+
