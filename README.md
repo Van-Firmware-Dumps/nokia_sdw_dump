@@ -1,0 +1,20 @@
+## qssi-user 14 UKQ1.231003.002 00WW_2_270 release-keys
+- Manufacturer: hmd global
+- Platform: holi
+- Codename: SDW
+- Brand: Nokia
+- Flavor: qssi-user
+- Release Version: 14
+- Kernel Version: 5.4.249
+- Id: UKQ1.231003.002
+- Incremental: 00WW_2_270
+- Tags: release-keys
+- CPU Abilist: arm64-v8a,armeabi-v7a,armeabi
+- A/B Device: true
+- Treble Device: true
+- Locale: en-US
+- Screen Density: undefined
+- Fingerprint: Nokia/Shadow_00WW/SDW:14/UKQ1.231003.002/00WW_2_270:user/release-keys
+- OTA version: 
+- Branch: qssi-user-14-UKQ1.231003.002-00WW_2_270-release-keys
+- Repo: nokia_sdw_dump
