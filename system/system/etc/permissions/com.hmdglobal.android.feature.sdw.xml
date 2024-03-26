@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<permissions>
+    <feature name="com.hmdglobal.android.feature.PRODUCT_SDW"/>
+    <feature name="com.hmdglobal.android.feature.YEAR2023" />
+</permissions>
